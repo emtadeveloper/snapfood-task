@@ -1,1 +1,3 @@
-export { default } from "./Compose";
+import { Compose } from "./Compose";
+
+export { Compose };

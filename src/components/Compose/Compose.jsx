@@ -1,4 +1,4 @@
-const Compose = (props) => {
+export const Compose = (props) => {
     const { components = [], children } = props;
 
     return (
@@ -9,4 +9,3 @@ const Compose = (props) => {
         </>
     );
 };
-export default Compose;

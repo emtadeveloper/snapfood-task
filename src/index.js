@@ -1,11 +1,14 @@
+// react
+
 import React from "react";
+
 // react dom
 
 import ReactDOM from "react-dom/client";
 
 // component
 
-import Compose from "./components/Compose";
+import { Compose } from "./components";
 
 // router
 
@@ -18,6 +21,10 @@ import App from "./App";
 // providers
 
 import ReduxProvider from "./providers/ReduxProvider";
+
+// styles
+
+import "./styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
