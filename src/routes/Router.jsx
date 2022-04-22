@@ -10,7 +10,7 @@ const Router = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/vendors" element={<Vendor />} />
+            <Route path="/vendor" element={<Vendor />} />
         </Routes>
     );
 };
