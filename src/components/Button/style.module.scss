@@ -1,0 +1,13 @@
+.button {
+    color: #ffff;
+    background: transparent;
+    border: .3rem solid  #ffff;;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+        transform: scale(1.1)
+    }
+}
