@@ -1,0 +1,12 @@
+*{
+  font-family: "Yekan";
+}
+
+html{
+  font-size: 10px;
+}
+
+body {
+    background-color: #009688;
+    overflow: hidden;
+  }
