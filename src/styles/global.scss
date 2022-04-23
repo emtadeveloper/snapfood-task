@@ -1,0 +1,15 @@
+@import "./variable.scss";
+
+html {
+    font-size: 10px;
+}
+
+* {
+    font-family: IRANSans;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: IRANSans;
+    background-color: $cyan;
+}

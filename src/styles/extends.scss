@@ -1,0 +1,24 @@
+.center_absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_center {
+    display: grid;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}

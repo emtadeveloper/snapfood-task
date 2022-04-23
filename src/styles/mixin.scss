@@ -1,0 +1,17 @@
+@mixin abs_absolute ($top,$right,$bottom, $left) {
+    position: absolute;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    top: $top;
+}
+
+@mixin full_box ($width,$height) {
+  width: $width;
+  height : $height
+}
+
+@mixin margin-padding($margin, $padding) {
+    margin :$margin;
+    padding:$padding
+  }
