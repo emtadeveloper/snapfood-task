@@ -1,0 +1,13 @@
+@import "../../styles/extends";
+.constainer {
+    margin: 1rem;
+    padding: 2rem;
+    @extend .grid_center;
+    .container_loader {
+        width: 100%;
+        font-size: 2rem;
+        margin: 5rem 0;
+        text-align: center;
+        color: #fff;
+    }
+}

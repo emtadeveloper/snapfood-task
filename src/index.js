@@ -24,7 +24,7 @@ import ReduxProvider from "./providers/ReduxProvider";
 
 // styles
 
-import "./styles/index.css";
+import "./styles/style.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

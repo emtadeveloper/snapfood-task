@@ -1,10 +1,12 @@
+@import "../../styles/mixin.scss";
+
 .button {
+    @include margin-padding(4rem 0 0 0, 1rem)
     color: #ffff;
+    font-family: Yekan;
     background: transparent;
     border: .3rem solid  #ffff;;
     border-radius: .5rem;
-    padding: 1rem;
-    margin-top: 4rem;
     cursor: pointer;
     transition: .5s;
     &:hover{

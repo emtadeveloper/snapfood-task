@@ -2,15 +2,15 @@ import styles from "./style.module.scss";
 
 export const Animation = () => {
     return (
-        <div class={styles.loop_wrapper}>
-            <div class={styles.mountain}></div>
-            <div class={styles.hill}></div>
-            <div class={styles.tree}></div>
-            <div class={styles.tree}></div>
-            <div class={styles.tree}></div>
-            <div class={styles.rock}></div>
-            <div class={styles.truck}></div>
-            <div class={styles.wheels}></div>
+        <div className={styles.loop_wrapper}>
+            <div className={styles.mountain}></div>
+            <div className={styles.hill}></div>
+            <div className={styles.tree}></div>
+            <div className={styles.tree}></div>
+            <div className={styles.tree}></div>
+            <div className={styles.rock}></div>
+            <div className={styles.truck}></div>
+            <div className={styles.wheels}></div>
         </div>
     );
 };

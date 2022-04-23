@@ -7,139 +7,160 @@
     overflow: hidden;
     border-bottom: .3rem solid #fff;
     color: #fff;
-    @media screen and (max-width : 70rem) {
-      width:80vw;
-    } 
-  }
-  .mountain {
-    position: absolute;
-    right: -90rem;
-    bottom: -2rem;
-    width: .2rem;
-    height: .2rem;
-    box-shadow: 0 0 0 5rem #4db6ac, 6rem 5rem 0 7rem #4db6ac,
-      9rem 9rem 0 5rem #4db6ac, 25rem 25rem 0 5rem #4db6ac,
-      29rem 32rem 0 5rem #4db6ac, 32rem 40rem 0 5rem #4db6ac;
-    transform: rotate(130deg);
-  }
-  .hill {
-    position: absolute;
-    right: -90rem;
-    bottom: -5rem;
-    border-radius: 50%;
-    height: 2rem;
-    width: 40rem;
-    box-shadow: 0 0 0 5rem #4db6ac, -20rem 0 0 2rem #4db6ac,
-      -9rem 0 0 5rem #4db6ac, 25rem 0 0 5rem #4db6ac, 29rem 0 0 5rem #4db6ac,
-      62rem 0 0 5rem #4db6ac;
-  }
-  .tree,
-  .tree:nth-child(2),
-  .tree:nth-child(3) {
-    position: absolute;
-    height: 10rem;
-    width: 3.5rem;
-    bottom: 0;
-    background: url("../../images/tree.svg") no-repeat;
-  }
-  .rock {
-    margin-top: -17%;
-    height: .6rem;
-    width: .6rem;
-    bottom: -2rem;
-    right: 100%;
-    border-radius: 20%;
-    position: absolute;
-    background: #ddd;
-  }
-  .truck,
-  .wheels {
-    transition: all ease;
-    width: 8.5rem;
-    margin-right: -6rem;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    background: #eee;
-  }
-  .truck {
-    background: url("../../images/truck.svg") no-repeat;
-    background-size: contain;
-    height: 6rem;
-  }
-  .truck::before {
-    content: "";
-    position: absolute;
-    width: 2.5rem;
-    box-shadow: -3rem 2.8rem 0 .15rem #fff, -3.5rem 1.8rem 0 .15rem #fff;
-  }
-
-  .wheels {
-    background: url("../../images/wheels.svg");
-    height: 1.5rem;
-  }
-  .tree {
-    animation: tree 3s 0s linear infinite;
-  }
-  .tree:nth-child(2) {
-    animation: tree2 2s 0.15s linear infinite;
-  }
-  .tree:nth-child(3) {
-    animation: tree3 8s 0.05s linear infinite;
-  }
-  .rock {
-    animation: rock 4s -0.53s linear infinite;
-  }
-  .truck {
-    animation: truck 4s 0.08s ease infinite;
-  }
-  .wheels {
-    animation: truck 4s 0.001s ease infinite;
-  }
-  .truck::before {
-    animation: wind 1.5s 0s ease infinite;
-  }
-  .mountain {
-    animation: mountain 20s linear infinite;
-  }
-  .hill {
-    animation: hill 4s 2s linear infinite;
-  }
-
-  @keyframes tree {
-    0%{transform: translateX(135rem);}
-    100%{transform: translateX(-5rem);}
-  }
-  @keyframes tree2 {
-    0%{transform: translateX(65rem);}
-    100%{transform: translateX(-5rem);}
-  }
-  @keyframes tree3 {
-    0%{transform: translateX(275rem);}
-    100%{transform: translateX(-5rem);}
-  }
-  @keyframes rock {
-    0%{right: -20rem;}
-    100%{right: 200rem;}
-  }
-  @keyframes truck {
-    6%{transform: translateY(0);}
-    7%{transform: translateY(-.6rem);}
-    9%{transform: translateY(0);}
-    10%{transform: translateY(-.1rem);}
-    11%{transform: translateY(0);}
-  }
-  @keyframes wind {
-    50%{transform: translateY(.3rem);}
-  }
-  @keyframes mountain {
-    100%{
-      transform: translateX(-200rem) rotate(130deg);
+    @media screen and (max-width: 70rem) {
+        width: 80vw;
     }
-  }
-  @keyframes hill {
-    100%{
-      transform: translateX(-200rem);
+    .mountain {
+        position: absolute;
+        right: -90rem;
+        bottom: -2rem;
+        width: .2rem;
+        height: .2rem;
+        box-shadow: 0 0 0 5rem #4db6ac, 6rem 5rem 0 7rem #4db6ac, 9rem 9rem 0 5rem #4db6ac, 25rem 25rem 0 5rem #4db6ac, 29rem 32rem 0 5rem #4db6ac, 32rem 40rem 0 5rem #4db6ac;
+        transform: rotate(130deg);
     }
-    
-  }
+    .hill {
+        position: absolute;
+        right: -90rem;
+        bottom: -5rem;
+        border-radius: 50%;
+        height: 2rem;
+        width: 40rem;
+        box-shadow: 0 0 0 5rem #4db6ac, -20rem 0 0 2rem #4db6ac, -9rem 0 0 5rem #4db6ac, 25rem 0 0 5rem #4db6ac, 29rem 0 0 5rem #4db6ac, 62rem 0 0 5rem #4db6ac;
+    }
+    .tree,
+    .tree:nth-child(2),
+    .tree:nth-child(3) {
+        position: absolute;
+        height: 10rem;
+        width: 3.5rem;
+        bottom: 0;
+        background: url("../../images/tree.svg") no-repeat;
+    }
+    .rock {
+        margin-top: -17%;
+        height: .6rem;
+        width: .6rem;
+        bottom: -2rem;
+        right: 100%;
+        border-radius: 20%;
+        position: absolute;
+        background: #ddd;
+    }
+    .truck,
+    .wheels {
+        transition: all ease;
+        width: 8.5rem;
+        margin-right: -6rem;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        background: #eee;
+    }
+    .truck {
+        background: url("../../images/truck.svg") no-repeat;
+        background-size: contain;
+        height: 6rem;
+    }
+    .truck::before {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        box-shadow: -3rem 2.8rem 0 .15rem #fff, -3.5rem 1.8rem 0 .15rem #fff;
+    }
+    .wheels {
+        background: url("../../images/wheels.svg");
+        height: 1.5rem;
+    }
+    .tree {
+        animation: tree 3s 0s linear infinite;
+        @keyframes tree {
+            0% {
+                transform: translateX(135rem);
+            }
+            100% {
+                transform: translateX(-5rem);
+            }
+        }
+    }
+    .tree:nth-child(2) {
+        animation: tree2 2s 0.15s linear infinite;
+        @keyframes tree2 {
+            0% {
+                transform: translateX(65rem);
+            }
+            100% {
+                transform: translateX(-5rem);
+            }
+        }
+    }
+    .tree:nth-child(3) {
+        animation: tree3 8s 0.05s linear infinite;
+        @keyframes tree3 {
+            0% {
+                transform: translateX(275rem);
+            }
+            100% {
+                transform: translateX(-5rem);
+            }
+        }
+    }
+    .rock {
+        animation: rock 4s -0.53s linear infinite;
+        @keyframes rock {
+            0% {
+                right: -20rem;
+            }
+            100% {
+                right: 200rem;
+            }
+        }
+    }
+    .truck {
+        animation: truck 4s 0.08s ease infinite;
+        @keyframes truck {
+            6% {
+                transform: translateY(0);
+            }
+            7% {
+                transform: translateY(-.6rem);
+            }
+            9% {
+                transform: translateY(0);
+            }
+            10% {
+                transform: translateY(-.1rem);
+            }
+            11% {
+                transform: translateY(0);
+            }
+        }
+    }
+    .wheels {
+        animation: truck 4s 0.001s ease infinite;
+    }
+    .truck::before {
+        animation: wind 1.5s 0s ease infinite;
+        @keyframes wind {
+            50% {
+                transform: translateY(.3rem);
+            }
+        }
+    }
+    .mountain {
+        animation: mountain 20s linear infinite;
+        @keyframes mountain {
+            100% {
+                transform: translateX(-200rem) rotate(130deg);
+            }
+        }
+    }
+    .hill {
+        animation: hill 4s 2s linear infinite;
+        @keyframes hill {
+            100% {
+                transform: translateX(-200rem);
+            }
+        }
+    }
+}
