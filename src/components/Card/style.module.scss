@@ -1,0 +1,98 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/extends.scss";
+@import "../../styles/variable.scss";
+.card {
+    position: relative;
+    background: $white;
+    border-radius: 1rem;
+    cursor: pointer;
+    @include full_box(35vw, 30rem);
+    overflow: hidden;
+    box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, .2);
+    @media screen and (max-width: 70rem) {
+        @include full_box(90vw, null)
+    }
+    .card_header {
+        @include full_box(null, 55%);
+        position: relative;
+        .card_header_logo {
+            display: block;
+            object-fit: cover;
+            @include full_box(100%, 100%);
+            filter: brightness(0.96);
+        }
+        .card_header_caption {
+            @include abs_absolute(1rem, 0, null, null);
+            color: $green;
+            padding: 1rem;
+            background-color: $white;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+    .card_mask {
+        @include full_box(5rem, 5rem);
+        @include abs_absolute(null, 2rem, 12rem, null);
+        background-color: $white;
+        padding: .5rem;
+        border-radius: 1rem;
+        .mask_logo {
+            border-radius: 1rem;
+            display: block;
+            @include full_box( 100%, auto);
+        }
+    }
+    .card_content {
+        height: 35%;
+        @include margin-padding(1rem 0 0 0, 1rem);
+        @extend .flex_between;
+        flex-direction: column;
+        .card_content_header {
+            @extend .flex_between;
+            flex-direction: row-reverse;
+            .header_title {
+                font-size: 1.8rem;
+            }
+            .header_content {
+                font-size: 1rem;
+                font-family: Yekan;
+                .header_content_rate {
+                    @include margin-padding( 0 .5rem, .25rem .5rem);
+                    color: $green;
+                    border-radius: .5rem;
+                    background-color: $background_rate;
+                    &::before {
+                        content: "✭";
+                        vertical-align: -.05rem;
+                        margin-right: .4rem;
+                        white-space: pre;
+                    }
+                }
+                .header_content_voteCount {
+                    color: $Gray;
+                }
+            }
+        }
+        .card_content_description {
+            font-size: 1.6rem;
+            text-align: right;
+            color: $black;
+        }
+        .card_content_price {
+            padding: 1rem;
+            align-self: flex-end;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            color: $Gray;
+            .card_content_price_light {
+                font-family: Yekan;
+                color: $black;
+            }
+        }
+    }
+}
+
+.none {
+    display: none;
+}
